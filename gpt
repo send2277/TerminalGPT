@@ -2,7 +2,7 @@
 
 command=$2
 printf "Write command to execute:\n"
-response=$(python3 /home/gpt/terminal/terminalgpt.py "$command")
+response=$(python3 /home/$USER/TerminalGPT/terminalgpt.py "$command")
 printf "Executed command : "
 echo $response
 eval $response
